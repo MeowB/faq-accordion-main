@@ -1,0 +1,72 @@
+@font-face {
+  font-family: WorkSans;
+  src: url(../assets/fonts/WorkSans-VariableFont_wght.ttf);
+}
+* {
+  font-family: WorkSans;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(../assets/images/background-pattern-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #f9f0ff;
+}
+
+.wrapper {
+  background-color: white;
+  border-radius: 10px;
+  position: absolute;
+  width: 90%;
+  max-width: 600px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+header {
+  display: flex;
+  align-items: center;
+  margin: 0 0 25px 0;
+  padding: 25px;
+}
+header img {
+  margin-right: 25px;
+}
+
+main button.accordion {
+  display: flex;
+  align-items: center;
+  text-align: start;
+  justify-content: space-between;
+  width: calc(100% - 50px);
+  margin: 0 25px;
+  background-color: white;
+  border: none;
+  padding: 25px 0 25px 25px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  border-top: 1px solid #ad28eb;
+}
+main button:nth-child(1) {
+  border: none;
+}
+main button:hover {
+  color: #ad28eb;
+}
+main img {
+  margin: 25px;
+}
+main .panel {
+  margin: 25px;
+  padding-bottom: 25px;
+  display: none;
+}
+main .panel p {
+  color: #8c6991;
+}
+
+/*# sourceMappingURL=style.css.map */

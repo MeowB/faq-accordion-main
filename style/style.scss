@@ -1,0 +1,88 @@
+// FONT
+@font-face {
+	font-family: WorkSans;
+	src: url(../assets/fonts/WorkSans-VariableFont_wght.ttf);
+}
+
+// COLORS
+$c-white: hsl(0, 0%, 100%);
+$c-light-pink: hsl(275, 100%, 97%);
+$c-grayish-purple: hsl(292, 16%, 49%);
+$c-dark-purple: hsl(292, 42%, 14%);
+$c-pink: hsl(281, 83%, 54%);
+
+* {
+	font-family: WorkSans;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-image: url(../assets/images/background-pattern-mobile.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: $c-light-pink;
+}
+
+.wrapper {
+	background-color: $c-white;
+	border-radius: 10px;
+	position: absolute;
+	width: 90%;
+	max-width: 600px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+header {
+	display: flex;
+	align-items: center;
+	margin: 0 0 25px 0;
+	padding: 25px;
+
+	img {
+		margin-right: 25px;
+	}
+}
+
+
+main {
+
+	button.accordion {
+		display: flex;
+		align-items: center;
+		text-align: start;
+		justify-content: space-between;
+		width: calc(100% - 50px);
+		margin: 0 25px;
+		background-color: $c-white;
+		border: none;
+		padding: 25px 0 25px 25px;
+		font-size: 18px;
+		font-weight: bold;
+		cursor: pointer;
+		border-top: 1px solid $c-pink;
+
+	}
+	button:nth-child(1) {
+		border: none;
+	}
+
+	button:hover {
+			color: $c-pink;
+	}
+
+	img {
+		margin: 25px;
+	}
+
+	.panel {
+		margin: 25px;
+		padding-bottom: 25px;
+		display: none;
+		p {
+			color: $c-grayish-purple;
+		}
+	}
+}
