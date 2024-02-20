@@ -49,7 +49,7 @@ main button.accordion {
   font-size: 18px;
   font-weight: bold;
   cursor: pointer;
-  border-top: 1px solid #ad28eb;
+  border-top: 1px solid #f9f0ff;
 }
 main button:nth-child(1) {
   border: none;
@@ -61,12 +61,13 @@ main img {
   margin: 25px;
 }
 main .panel {
-  margin: 25px;
+  margin: 0 25px;
   padding-bottom: 25px;
   display: none;
 }
 main .panel p {
   color: #8c6991;
+  padding: 0 25px;
 }
 
 /*# sourceMappingURL=style.css.map */
