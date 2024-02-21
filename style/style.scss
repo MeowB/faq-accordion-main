@@ -20,19 +20,21 @@ $c-pink: hsl(281, 83%, 54%);
 body {
 	background-image: url(../assets/images/background-pattern-mobile.svg);
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: contain;
 	background-color: $c-light-pink;
+
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Ensure the body covers the entire viewport height */
+	flex-direction: column;
 }
 
 .wrapper {
 	background-color: $c-white;
 	border-radius: 10px;
-	position: absolute;
 	width: 90%;
 	max-width: 600px;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
 }
 
 header {
@@ -85,5 +87,17 @@ main {
 			color: $c-grayish-purple;
 			padding: 0 25px;
 		}
+	}
+}
+
+footer {
+	position: fixed;
+	bottom: 0;
+}
+
+@media only screen and (min-width: 375px) {
+	body {
+		background-image: url(../assets/images/background-pattern-desktop.svg);
+		justify-content: center; /* Center horizontally */
 	}
 }
